@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: compiler - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Temp\RSP3.tmp" with contents
+[
+/nologo /MLd /W4 /Gm /GR /GX /ZI /Od /I "../" /D "_DEBUG" /D "WIN32" /D "_CONSOLE" /D "_MBCS" /D "COMPILER_ENVIRONMENT" /Fo"compiler___Win32_Debug/" /Fd"compiler___Win32_Debug/" /FD /GZ /c 
+"C:\VC\ProjectC\compiler\CodeEmitter.cpp"
+"C:\VC\ProjectC\compiler\ErrorManager.cpp"
+"C:\VC\ProjectC\compiler\ICodeEmitter.cpp"
+"C:\VC\ProjectC\Instruction.cpp"
+"C:\VC\ProjectC\compiler\main.cpp"
+"C:\VC\ProjectC\compiler\Native.cpp"
+"C:\VC\ProjectC\compiler\OutputManager.cpp"
+"C:\VC\ProjectC\compiler\Preprocessor.cpp"
+"C:\VC\ProjectC\compiler\ScopeManager.cpp"
+"C:\VC\ProjectC\compiler\SourceManager.cpp"
+"C:\VC\ProjectC\compiler\StringTable.cpp"
+"C:\VC\ProjectC\compiler\symbol.cpp"
+"C:\VC\ProjectC\compiler\SymbolTable.cpp"
+"C:\VC\ProjectC\compiler\SyntaxTree.cpp"
+"C:\VC\ProjectC\type.cpp"
+"C:\VC\ProjectC\compiler\lexer.cpp"
+"C:\VC\ProjectC\compiler\minicpp.cpp"
+]
+Creating command line "cl.exe @C:\Temp\RSP3.tmp" 
+Creating temporary file "C:\Temp\RSP4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"compiler___Win32_Debug/compiler.pdb" /debug /machine:I386 /nodefaultlib:"LIBCMT" /out:"compiler___Win32_Debug/compiler.exe" /pdbtype:sept 
+.\compiler___Win32_Debug\CodeEmitter.obj
+.\compiler___Win32_Debug\ErrorManager.obj
+.\compiler___Win32_Debug\ICodeEmitter.obj
+.\compiler___Win32_Debug\Instruction.obj
+.\compiler___Win32_Debug\main.obj
+.\compiler___Win32_Debug\Native.obj
+.\compiler___Win32_Debug\OutputManager.obj
+.\compiler___Win32_Debug\Preprocessor.obj
+.\compiler___Win32_Debug\ScopeManager.obj
+.\compiler___Win32_Debug\SourceManager.obj
+.\compiler___Win32_Debug\StringTable.obj
+.\compiler___Win32_Debug\symbol.obj
+.\compiler___Win32_Debug\SymbolTable.obj
+.\compiler___Win32_Debug\SyntaxTree.obj
+.\compiler___Win32_Debug\type.obj
+.\compiler___Win32_Debug\lexer.obj
+.\compiler___Win32_Debug\minicpp.obj
+]
+Creating command line "link.exe @C:\Temp\RSP4.tmp"
+<h3>Output Window</h3>
+Compiling...
+CodeEmitter.cpp
+ErrorManager.cpp
+ICodeEmitter.cpp
+Instruction.cpp
+main.cpp
+Native.cpp
+OutputManager.cpp
+Preprocessor.cpp
+ScopeManager.cpp
+SourceManager.cpp
+StringTable.cpp
+symbol.cpp
+SymbolTable.cpp
+SyntaxTree.cpp
+type.cpp
+lexer.cpp
+lexer.cpp(835) : warning C4244: 'initializing' : conversion from 'const int' to 'unsigned char', possible loss of data
+lexer.cpp(840) : warning C4244: '=' : conversion from 'const int' to 'unsigned char', possible loss of data
+lexer.cpp(851) : warning C4102: 'find_rule' : unreferenced label
+lexer.cpp(1693) : warning C4244: 'initializing' : conversion from 'int' to 'unsigned char', possible loss of data
+lexer.cpp(1698) : warning C4244: '=' : conversion from 'const int' to 'unsigned char', possible loss of data
+lexer.cpp(1728) : warning C4244: '=' : conversion from 'const int' to 'unsigned char', possible loss of data
+c:\programmi\microsoft visual studio\vc98\include\stlport\stl\type_traits.h(360) : warning C4505: 'yyunput' : unreferenced local function has been removed
+        lexer.cpp(657) : see declaration of 'yyunput'
+c:\programmi\microsoft visual studio\vc98\include\stlport\stl\type_traits.h(360) : warning C4505: 'yy_flex_realloc' : unreferenced local function has been removed
+        lexer.cpp(243) : see declaration of 'yy_flex_realloc'
+minicpp.cpp
+c:\vc\projectc\compiler\minicpp.cpp(887) : warning C4244: '=' : conversion from 'int' to 'short', possible loss of data
+Generating Code...
+c:\vc\projectc\compiler\minicpp.cpp(1780) : warning C4701: local variable 'yyval' may be used without having been initialized
+c:\vc\projectc\compiler\syntaxtree.h(1868) : warning C4715: 'IdentUseNode::evaluteExpr' : not all control paths return a value
+minicpp.lex(205) : warning C4701: local variable 'c' may be used without having been initialized
+Linking...
+
+
+
+<h3>Results</h3>
+compiler.exe - 0 error(s), 12 warning(s)
+</pre>
+</body>
+</html>

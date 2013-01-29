@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{alltt}
+\usepackage{times}
+\newcommand{\scitea}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.5, 0.5, 0.5}{#1}}}}
+\newcommand{\scitec}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.5, 0.0}{#1}}}}
+\newcommand{\scitef}[1]{\noindent{\ttfamily{\textbf{\textcolor[rgb]{0.0, 0.0, 0.5}{#1}}}}}
+\newcommand{\scitek}[1]{\noindent{\ttfamily{\textbf{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}}
+\newcommand{\scitel}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}
+\newcommand{\sciteib}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.5, 0.3, 0.1}{\colorbox[rgb]{0.9, 0.9, 1.0}{#1}}}}}
+\begin{document}
+
+Source File: 
+
+\noindent
+\tiny{
+\scitef{class}
+\scitea{ }
+\scitel{A}
+\scitek{;}
+\scitea{} \\
+\scitef{class}
+\scitea{ }
+\scitel{B}
+\scitek{;}
+\scitea{} \\
+\scitea{} \\
+\scitel{A}
+\scitea{ }
+\scitel{f}
+\scitek{(}
+\scitel{B}
+\scitek{);}
+\scitea{ }
+\scitec{//dichiarazione di funzione f: B -$>$ A} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitec{//B : TYPENAME} \\
+\scitea{}
+} %end tiny
+
+\end{document}

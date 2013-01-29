@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{Fubi}
+S.~Bilas.
+\newblock Fubi: Automatic function exporting for scripting and networking.
+\newblock Available online at http://www.drizzle.com/~scottb/gdc, 2001.
+
+\bibitem{Bruce02}
+B.~Eckel.
+\newblock {\em Thinking in C++ 2nd Ed.}
+\newblock MindView, 2002.
+
+\bibitem{Rob00}
+J.~Robbins.
+\newblock {\em Debugging Applications}.
+\newblock Microsoft Press, 2000.
+
+\bibitem{Ros91}
+J.~A. Roskind.
+\newblock C++ 2.1 grammar, and the resulting ambiguities.
+\newblock 1991.
+
+\bibitem{Bjarne}
+B.~Stroustrup.
+\newblock {\em The C++ programming languge, 3rd Ed.}
+\newblock Addison Wesley, 1997.
+
+\bibitem{GS03}
+A.~Varanese and A.~LaMothe.
+\newblock {\em Game Scripting Mastery}.
+\newblock Premier Press, 2003.
+
+\end{thebibliography}

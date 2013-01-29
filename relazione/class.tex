@@ -1,0 +1,139 @@
+\documentclass[a4paper]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{alltt}
+\usepackage{times}
+\newcommand{\scitea}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.5, 0.5, 0.5}{#1}}}}
+\newcommand{\scitef}[1]{\noindent{\ttfamily{\textbf{\textcolor[rgb]{0.0, 0.0, 0.5}{#1}}}}}
+\newcommand{\scitek}[1]{\noindent{\ttfamily{\textbf{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}}
+\newcommand{\scitel}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}
+\newcommand{\sciteib}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.5, 0.3, 0.1}{\colorbox[rgb]{0.9, 0.9, 1.0}{#1}}}}}
+\begin{document}
+
+Source File: class.h
+
+\noindent
+\tiny{
+\scitef{struct}
+\scitea{ }
+\scitel{ClassHeader}
+\scitea{} \\
+\scitek{\{}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{int}
+\scitea{ }
+\scitel{size}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitel{tag\_t}
+\scitea{ }
+\scitel{tag}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitel{tag\_t}
+\scitea{ }
+\scitel{parentTag}
+\scitek{;}
+\scitea{ } \\
+\scitea{{\hspace*{1em}} }
+\scitef{int}
+\scitea{ }
+\scitel{objectSize}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{int}
+\scitea{ }
+\scitel{functionCount}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{int}
+\scitea{ }
+\scitel{virtualCount}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{int}
+\scitea{ }
+\scitel{nativeCount}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{int}
+\scitek{[]}
+\scitea{ }
+\scitel{vtable}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitel{FunctionEntry}
+\scitek{[]}
+\scitea{ }
+\scitel{funcTable}
+\scitek{;}
+\scitea{} \\
+\scitek{\};}
+\scitea{} \\
+\scitea{} \\
+\scitef{struct}
+\scitea{ }
+\scitel{FunctionEntry}
+\scitea{} \\
+\scitek{\{}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{int}
+\scitea{ }
+\scitel{ordinal}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{int}
+\scitea{ }
+\scitel{localCount}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{int}
+\scitea{ }
+\scitel{paramCount}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{union}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitek{\{}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{int}
+\scitea{ }
+\scitel{startAddress}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{tag\_t}
+\scitea{ }
+\scitel{nativeID}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitek{\};}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{bool}
+\scitea{ }
+\scitel{isNative}
+\scitek{;}
+\scitea{} \\
+\scitek{\};}
+\scitea{} \\
+\scitea{}
+} %end tiny
+
+\end{document}

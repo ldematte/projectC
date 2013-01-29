@@ -1,0 +1,476 @@
+\documentclass[a4paper]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{alltt}
+\usepackage{times}
+\newcommand{\scitea}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}
+\newcommand{\sciteb}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.5, 0.0}{#1}}}}
+\newcommand{\scitee}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.5, 0.5}{#1}}}}
+\newcommand{\scitef}[1]{\noindent{\ttfamily{\textbf{\textcolor[rgb]{0.0, 0.0, 0.5}{#1}}}}}
+\newcommand{\scitek}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}
+\newcommand{\scitel}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}
+\newcommand{\sciteib}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}
+\begin{document}
+
+Source File: baker.pas
+
+\noindent
+\tiny{
+\scitef{function}
+\scitea{ }
+\scitel{BakerDitchfield}
+\scitek{(}
+\scitea{ }
+\scitel{this\_name}
+\scitea{ }
+\scitek{:}
+\scitea{ }
+\scitef{name}
+\scitek{,}
+\scitea{ }
+\scitel{args}
+\scitea{ }
+\scitek{:}
+\scitea{ }
+\scitel{list}
+\scitek{$<$}
+\scitea{ }
+\scitef{set}
+\scitek{$<$}
+\scitea{ }
+\scitel{tree}
+\scitea{ }
+\scitek{$>$}
+\scitea{ }
+\scitek{$>$}
+\scitea{ }
+\scitek{)}
+\scitea{ }
+\scitek{:}
+\scitea{ } \\
+\scitea{{\hspace*{1em}} }
+\scitel{tree\_list}
+\scitea{} \\
+\scitef{begin}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitel{result\_trees}
+\scitea{ }
+\scitek{:}
+\scitea{ }
+\scitef{set}
+\scitek{$<$}
+\scitea{ }
+\scitel{tree}
+\scitea{ }
+\scitek{$>$}
+\scitea{ }
+\scitek{=}
+\scitea{ }
+\sciteb{\{\}}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{for}
+\scitea{ }
+\scitel{each}
+\scitea{ }
+\scitel{interpretation}
+\scitea{ }
+\scitek{(}
+\scitel{formals}
+\scitek{)}
+\scitea{ }
+\scitel{corresponding}
+\scitea{ }
+\scitef{to}
+\scitea{ }
+\scitel{this\_name}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{if}
+\scitea{ }
+\scitel{formals.length}
+\scitea{ }
+\scitek{==}
+\scitea{ }
+\scitel{args.length}
+\scitea{ }
+\scitef{then}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{new\_tree}
+\scitea{ }
+\scitek{:}
+\scitea{ }
+\scitel{tree}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{new\_tree.type}
+\scitea{ }
+\scitek{=}
+\scitea{ }
+\scitel{return\_type}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{new\_tree.cost}
+\scitea{ }
+\scitek{=}
+\scitea{ }
+\scitee{0}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{for}
+\scitea{ }
+\scitel{i}
+\scitea{ }
+\scitek{=}
+\scitea{ }
+\scitee{1}
+\scitea{ }
+\scitef{to}
+\scitea{ }
+\scitel{formals.length}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{if}
+\scitea{ }
+\scitel{there}
+\scitea{ }
+\scitel{exists}
+\scitea{ }
+\scitel{j}
+\scitea{ }
+\scitel{in}
+\scitea{ }
+\scitel{args}
+\scitek{[}
+\scitel{i}
+\scitek{]}
+\scitea{ }
+\scitel{such}
+\scitea{ }
+\scitel{that}
+\scitea{ }
+\scitel{j.type}
+\scitea{ }
+\scitel{can}
+\scitea{ }
+\scitel{be}
+\scitea{ }
+\scitel{converted}
+\scitea{ } \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{to}
+\scitea{ }
+\scitel{formals}
+\scitek{[}
+\scitel{i}
+\scitek{].}
+\scitef{type}
+\scitea{ }
+\scitef{then}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{find}
+\scitea{ }
+\scitel{k}
+\scitea{ }
+\scitel{in}
+\scitea{ }
+\scitel{args}
+\scitek{[}
+\scitel{i}
+\scitek{]}
+\scitea{ }
+\scitel{such}
+\scitea{ }
+\scitel{that}
+\scitea{ } \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{conversion\_cost}
+\scitek{(}
+\scitel{k.type}
+\scitek{,}
+\scitea{ }
+\scitel{formals}
+\scitek{[}
+\scitel{i}
+\scitek{].}
+\scitef{type}
+\scitek{)}
+\scitea{ }
+\scitek{+}
+\scitea{ }
+\scitel{k.cost}
+\scitea{ }
+\scitel{is}
+\scitea{ }
+\scitel{minimized}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{new\_tree.child}
+\scitek{[}
+\scitel{i}
+\scitek{]}
+\scitea{ }
+\scitek{=}
+\scitea{ }
+\scitel{k}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{new\_tree.cost}
+\scitea{ }
+\scitek{+=}
+\scitea{ }
+\scitel{k.cost}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{new\_tree.cost}
+\scitea{ }
+\scitek{+=}
+\scitea{ }
+\scitel{conversion\_cost}
+\scitek{(}
+\scitel{k.type}
+\scitek{,}
+\scitea{ }
+\scitel{formals}
+\scitek{[}
+\scitel{i}
+\scitek{].}
+\scitef{type}
+\scitek{)}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{else}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{skip}
+\scitea{ }
+\scitef{to}
+\scitea{ }
+\scitel{next}
+\scitea{ }
+\scitel{interpretation}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitek{(}
+\scitel{i.e.}
+\scitea{ }
+\scitel{this}
+\scitea{ }
+\scitel{interpretation}
+\scitea{ }
+\scitel{is}
+\scitea{ }
+\scitef{not}
+\scitea{ }
+\scitel{consistent}
+\scitea{ }
+\scitef{with}
+\scitea{ }
+\scitel{the}
+\scitea{ } \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{possible}
+\scitea{ }
+\scitel{argument}
+\scitea{ }
+\scitel{types}
+\scitek{)}
+\scitea{} \\
+\scitea{\hspace*{1em}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{end}
+\scitea{ }
+\scitef{if}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{end}
+\scitea{ }
+\scitef{for}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{if}
+\scitea{ }
+\scitel{this}
+\scitea{ }
+\scitel{interpretation}
+\scitea{ }
+\scitel{is}
+\scitea{ }
+\scitel{valid}
+\scitea{ }
+\scitef{then}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{if}
+\scitea{ }
+\scitel{there}
+\scitea{ }
+\scitel{exists}
+\scitea{ }
+\scitel{i}
+\scitea{ }
+\scitel{in}
+\scitea{ }
+\scitel{result\_trees}
+\scitea{ }
+\scitel{such}
+\scitea{ }
+\scitel{that}
+\scitea{ }
+\scitel{i.type}
+\scitea{ }
+\scitek{==}
+\scitea{ }
+\scitel{new\_tree.type}
+\scitea{ } \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{then}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{if}
+\scitea{ }
+\scitel{i.cost}
+\scitea{ }
+\scitek{==}
+\scitea{ }
+\scitel{new\_tree.cost}
+\scitea{ }
+\scitef{then}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{i.ambiguous}
+\scitea{ }
+\scitek{=}
+\scitea{ }
+\scitef{true}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{else}
+\scitea{ }
+\scitef{if}
+\scitea{ }
+\scitel{i.cost}
+\scitea{ }
+\scitek{$<$}
+\scitea{ }
+\scitel{new\_tree.cost}
+\scitea{ }
+\scitef{then}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{remove}
+\scitea{ }
+\scitel{i}
+\scitea{ }
+\scitel{from}
+\scitea{ }
+\scitel{result\_trees}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{add}
+\scitea{ }
+\scitel{new\_tree}
+\scitea{ }
+\scitef{to}
+\scitea{ }
+\scitel{result\_trees}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitek{(}
+\scitef{else}
+\scitea{ }
+\scitel{throw}
+\scitea{ }
+\scitel{away}
+\scitea{ }
+\scitel{new\_tree}
+\scitek{)}
+\scitea{} \\
+\scitea{\hspace*{1em}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{end}
+\scitea{ }
+\scitef{if}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{else}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{add}
+\scitea{ }
+\scitel{new\_tree}
+\scitea{ }
+\scitef{to}
+\scitea{ }
+\scitel{result\_trees}
+\scitea{} \\
+\scitea{\hspace*{1em}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{end}
+\scitea{ }
+\scitef{if}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{end}
+\scitea{ }
+\scitef{if}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{end}
+\scitea{ }
+\scitef{if}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{end}
+\scitea{ }
+\scitef{for}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{for}
+\scitea{ }
+\scitel{each}
+\scitea{ }
+\scitel{tree}
+\scitea{ }
+\scitel{in}
+\scitea{ }
+\scitel{result\_trees}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{if}
+\scitea{ }
+\scitel{tree.ambiguous}
+\scitea{ }
+\scitef{then}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitel{remove}
+\scitea{ }
+\scitel{tree}
+\scitea{ }
+\scitel{from}
+\scitea{ }
+\scitel{result\_trees}
+\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }
+\scitef{end}
+\scitea{ }
+\scitef{if}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{end}
+\scitea{ }
+\scitef{if}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitel{return}
+\scitea{ }
+\scitel{result\_trees}
+\scitea{} \\
+\scitef{end}
+\scitea{} \\
+\scitea{}
+} %end tiny
+
+\end{document}

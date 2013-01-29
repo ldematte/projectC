@@ -1,0 +1,454 @@
+This is TeX, Version 3.141592 (MiKTeX 2.2) (preloaded format=latex 2000.11.28)  21 JAN 2004 13:28
+**relazione.tex
+(relazione.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for english, french, german, ngerman, du
+mylang, nohyphenation, loaded.
+(C:\texmf\tex\latex\base\article.cls
+Document Class: article 2001/04/21 v1.4e Standard LaTeX document class
+(C:\texmf\tex\latex\base\size11.clo
+File: size11.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (C:\texmf\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+) (C:\texmf\tex\latex\graphics\epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(C:\texmf\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\texmf\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(C:\texmf\tex\latex\graphics\graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+ (C:\texmf\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (C:\texmf\tex\latex\00miktex\graphics.cfg)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(C:\texmf\tex\latex\graphics\dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+\epsfxsize=\dimen105
+\epsfysize=\dimen106
+)
+(C:\texmf\tex\generic\Babel\babel.sty
+Package: babel 2001/03/01 v3.7h The Babel package
+ (C:\texmf\tex\generic\Babel\italian.ldf
+Language: italian 2001/01/19 v1.2o Italian support from the babel system
+
+(C:\texmf\tex\generic\Babel\babel.def
+File: babel.def 2001/03/01 v3.7h Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen107
+)
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Italian'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@italian = a dialect from \language0
+Package babel Info: Making " an active character on input line 72.
+)) (C:\texmf\tex\latex\base\fontenc.sty
+Package: fontenc 2001/06/05 v1.94 Standard LaTeX package
+ (C:\texmf\tex\latex\base\t1enc.def
+File: t1enc.def 2001/06/05 v1.94 Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 38.
+))
+(C:\texmf\tex\latex\graphics\color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+ (C:\texmf\tex\latex\00miktex\color.cfg)
+Package color Info: Driver file: dvips.def on input line 125.
+
+(C:\texmf\tex\latex\graphics\dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)) (C:\texmf\tex\latex\base\alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+) (C:\texmf\tex\latex\psnfss\times.sty
+Package: times 2001/06/04 PSNFSS-v8.2 (SPQR) 
+) (relazione.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 28.
+LaTeX Font Info:    Try loading font information for OT2+cmr on input line 28.
+
+(C:\texmf\tex\latex\cyrillic\ot2cmr.fd
+File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 28.
+ (C:\texmf\tex\latex\psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+
+(C:\texmf\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+ (C:\texmf\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 36.
+
+Overfull \hbox (4.65678pt too wide) in paragraph at lines 37--38
+\T1/ptm/m/n/10 Com-pi-la-tori'' pres-so l'u-ni-ver-sità degli Stu-di di Tren-to
+, pre-sen-to un com-pi-la-tore
+ []
+
+
+Overfull \hbox (28.7356pt too wide) in paragraph at lines 37--38
+\T1/ptm/m/n/10 carat-ter-is-tiche e le dif-fi-coltà riscon-trate du-rante la pr
+o-get-tazione e l'im-ple-men-tazione
+ []
+
+[1
+
+]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 42.
+
+Overfull \hbox (2.04546pt too wide) in paragraph at lines 44--45
+\T1/ptm/m/n/10.95 lin-guag-gio è molto sem-pli-fi-ca-to per ra-gioni di com-p-l
+essità; tut-tavia le carat-ter-is-tiche
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 47.
+(C:\texmf\tex\latex\psnfss\omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+
+Overfull \hbox (15.59068pt too wide) in paragraph at lines 64--65
+\T1/ptm/m/n/10.95 sup-port-are e im-ple-mentare agevol-mente al-tre carat-ter-i
+s-tiche del lin-guag-gio at-tual-mente
+ []
+
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
+[2]
+File: compiler.eps Graphic file (type eps)
+ <compiler.eps>
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 92.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 101.
+ (C:\texmf\tex\latex\psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 102.
+ [3] [4]
+File: esempio1.eps Graphic file (type eps)
+ <esempio1.eps>
+[5] [6]
+File: vm.eps Graphic file (type eps)
+ <vm.eps>
+File: instr.eps Graphic file (type eps)
+ <instr.eps> [7]
+File: operands.eps Graphic file (type eps)
+ <operands.eps> [8]
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+[]\T1/pcr/m/n/8 ADD, SUB,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
+[]\T1/ptm/m/n/9 Eseguono rispet-ti-va-mente ad-dizione,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
+\T1/ptm/m/n/9 sot-trazione, molti-pli-cazione, di-vi-sione,
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 466--467
+\T1/ptm/m/n/9 il risu-lata-to nel-l'-operan-do 0. Es-em-pio:
+ []
+
+
+Underfull \hbox (badness 6808) in paragraph at lines 466--467
+\T1/pcr/m/n/8 ADD REG_A REG_B REG_C\T1/ptm/m/n/10.95 : \T1/pcr/m/n/8 op[REG_A]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--474
+[]\T1/ptm/m/n/9 Recupera l'ele-men-to nel-l'-operan-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--474
+\T1/ptm/m/n/9 1 e lo as-seg-na al da-to \T1/ptm/m/it/9 pun-ta-to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--474
+\T1/ptm/m/n/9 dal-l'-operan-do 0. Es-em-pio:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--474
+\T1/pcr/m/n/8 REG_A = {OP_TYPE_POINTER, 0x300}
+ []
+
+
+Underfull \hbox (badness 3601) in paragraph at lines 470--474
+\T1/pcr/m/n/8 MOV REG_A 10\T1/ptm/m/n/10.95 : \T1/pcr/m/n/8 heap[0x300] := 10
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--479
+[]\T1/ptm/m/n/9 Recupera l'ele-men-to nel-l'-operan-do 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--479
+\T1/pcr/m/n/8 REG_A = {OP_TYPE_POINTER, 0x300}
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--479
+\T1/pcr/m/n/8 SET REG_A 10\T1/ptm/m/n/10.95 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--479
+\T1/pcr/m/n/8 REG_A = {OP_TYPE_INT, 10}
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 480--481
+\T1/ptm/m/n/9 stack. Nel ca-so di un operan-do di
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 480--481
+\T1/ptm/m/n/9 tipo \T1/pcr/m/n/8 OBJECT \T1/ptm/m/n/9 in-cre-men-ta il con-ta-t
+ore di
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 482--483
+\T1/ptm/m/n/9 e lo muove nel-la lo-cazione in-di-can-ta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 486--486
+[]\T1/pcr/m/n/8 AND, OR, XOR,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 490--490
+[]\T1/pcr/m/n/8 FADD, FSUB,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 490--491
+[]\T1/ptm/m/n/9 Eseguono rispet-ti-va-mente ad-dizione,
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 492--493
+\T1/ptm/m/n/9 nu-mero ref-eren-zi-a-to da op1 sal-van-do il
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+[]\T1/pcr/m/n/8 I2F, F2I,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+\T1/pcr/m/n/8 STR2I, STR2F,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--519
+[]\T1/ptm/m/n/9 Istruzioni di con-ver-sione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--519
+\T1/ptm/m/n/9 rispet-ti-va-mente da (op1) a (op0):
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--519
+\T1/pcr/m/n/8 INT -> FLOAT 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--519
+\T1/pcr/m/n/8 FLOAT -> INT 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--519
+\T1/pcr/m/n/8 STRING -> INT 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--519
+\T1/pcr/m/n/8 STRING -> FLOAT 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--519
+\T1/pcr/m/n/8 INT -> STRING 
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 522--523
+[]\T1/ptm/m/n/9 Memorizza nel-la lo-cazione di memo-ria
+ []
+
+
+Underfull \hbox (badness 6157) in paragraph at lines 528--529
+\T1/ptm/m/n/9 del-l'ar-ray in op1 con in-dice in op2
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
+\T1/ptm/m/n/9 nel-l'-operan-do ref-eren-zi-a-to in op0.
+ []
+
+
+Underfull \hbox (badness 4832) in paragraph at lines 531--532
+[]\T1/ptm/m/n/9 Crea un ar-ray con el-e-men-ti del tipo
+ []
+
+
+Underfull \hbox (badness 6592) in paragraph at lines 533--534
+\T1/ptm/m/n/9 1. Un clone con-di-vide l'area dati
+ []
+
+
+Overfull \hbox (38.96208pt too wide) in paragraph at lines 499--540
+ [] 
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 551--551
+[]\T1/pcr/m/n/8 JE, JNE, JLE,
+ []
+
+
+Overfull \hbox (78.71205pt too wide) in paragraph at lines 543--555
+ [] 
+ []
+
+[10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 645--668
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 645--668
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 645--668
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 645--668
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 671--756
+
+ []
+
+File: identuse.eps Graphic file (type eps)
+<identuse.eps> [12]
+File: memberuse.eps Graphic file (type eps)
+ <memberuse.eps> [13] [14] [15] [16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 1503--1506
+
+ []
+
+File: virtual.eps Graphic file (type eps)
+<virtual.eps> [18]
+Underfull \hbox (badness 10000) in paragraph at lines 1524--1545
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1524--1545
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1524--1545
+
+ []
+
+[19]
+File: object.eps Graphic file (type eps)
+ <object.eps>
+File: stack.eps Graphic file (type eps)
+ <stack.eps> [20]
+File: vcall.eps Graphic file (type eps)
+ <vcall.eps>
+Overfull \hbox (10.90459pt too wide) in paragraph at lines 1582--1583
+[]\T1/ptm/m/n/10.95 usiamo l'ID come chi-ave per trovare le in-for-mazioni sul-
+la classe cor-rispon-dente
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1601--1602
+[]\T1/ptm/m/n/10.95 esempio ered-i-ta-ri-età: no
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1606--1607
+[]\T1/ptm/m/n/10.95 semplice test di scope sulle
+ []
+
+(relazione.bbl [22]) [23] (relazione.aux) ) 
+Here is how much of TeX's memory you used:
+ 1712 strings out of 96052
+ 18521 string characters out of 1197190
+ 76783 words of memory out of 1071257
+ 4487 multiletter control sequences out of 35000
+ 36814 words of font info for 64 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 607
+ 32i,9n,24p,4028b,508s stack positions out of 1500i,500n,5000p,200000b,32768s
+
+Output written on relazione.dvi (23 pages, 95536 bytes).

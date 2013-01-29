@@ -1,0 +1,83 @@
+-ogni funzione ha come parametro aggiuntivo this
+-si aggiunge l'offset della variabile dall'inizio dell'oggetto
+-si scrive quello che si vuole nel deref dell'indirizzo ottenuto
+
+-potrei avere un registro per il this?
+ o metterlo sempre per primo sullo stack
+ 
+ 
+ 00401089   lea         edi,[ebp-44h]
+0040108C   mov         ecx,11h
+00401091   mov         eax,0CCCCCCCCh
+00401096   rep stos    dword ptr [edi]
+17:       int y;
+18:       y = b.bb;
+
+si mette this in eax
+si mette this + 8 in ecx... fa direttamente il conto!
+00401098   mov         eax,dword ptr [ebp+8]
+0040109B   mov         ecx,dword ptr [eax+8]
+0040109E   mov         dword ptr [ebp-4],ecx
+0040109E   mov         dword ptr [y],ecx
+
+19:       x = y;
+004010A1   mov         edx,dword ptr [ebp+8]
+004010A4   mov         eax,dword ptr [ebp-4]
+004010A4   mov         eax,dword ptr [y]
+004010A7   mov         dword ptr [this+4],eax
+
+
+
+
+
+20:       b->bb = 1;
+mette this in eax
+0040D518   mov         eax,dword ptr [ebp+8]
+mette this + 8 (B* b) in ecx
+0040D51B   mov         ecx,dword ptr [eax+8]
+nel dereference di ecx, mette 1 (se fosse il secondo, nel defer di ecx + 4)
+0040D51E   mov         dword ptr [ecx],1
+
+
+quindi:
+-ho bisogno di un this da passare alle funzioni
+-devo inserire CODICE come quello di sopra nei . e ->
+-devo prevedere nella VM un operatore di dereference
+
+quindi, il tipo di operando (OBJECT, ORDINAL) e 
+(SYMBOL, ORDINAL) non mi servono piu': meglio, gli operandi 
+tornano a essere tutti di 32 bit.
+
+questa cosa va risolta gia' a livello di I-code.
+
+-OP_TYPE_OBJECT (Object*)
+-OP_TYPE_POINTER(void*)
+
+a: OP_TYPE_OBJECT
+b: OP_TYPE_POINTER
+
+OP_DEREF a, b
+a = *b
+
+OP_LEA b, a
+b = &a;
+
+OP_PADD
+OP_PSUB
+
+per l'aritmetica dei puntatori: puntatore + offset o - offset
+ci serve anche puntatore + puntatore? speriamo di no
+
+mette this in eax
+0040D518   mov         eax,dword ptr [ebp+8]
+mette this + 8 (B* b) in ecx
+0040D51B   mov         ecx,dword ptr [eax+8]
+nel dereference di ecx, mette 1 (se fosse il secondo, nel defer di ecx + 4)
+0040D51E   mov         dword ptr [ecx],1
+
+OP_MOV REG_A REG_THIS
+OP_PADD REG_C REG_THIS 8
+OP_PADD REG_C REG_C 1 //si va di byte o di Operand??
+OP_DMOV REG_C 1
+
+ci serve una mov che faccia il deref!!

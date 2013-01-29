@@ -1,0 +1,93 @@
+\documentclass[a4paper]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{alltt}
+\usepackage{times}
+\newcommand{\scitea}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.5, 0.5, 0.5}{#1}}}}
+\newcommand{\scitec}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.5, 0.0}{#1}}}}
+\newcommand{\scitef}[1]{\noindent{\ttfamily{\textbf{\textcolor[rgb]{0.0, 0.0, 0.5}{#1}}}}}
+\newcommand{\scitek}[1]{\noindent{\ttfamily{\textbf{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}}
+\newcommand{\scitel}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}
+\newcommand{\sciteib}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.5, 0.3, 0.1}{\colorbox[rgb]{0.9, 0.9, 1.0}{#1}}}}}
+\begin{document}
+
+Source File: 
+
+\noindent
+\tiny{
+\scitef{class}
+\scitea{ }
+\scitel{TypeDef}
+\scitea{} \\
+\scitek{\{}
+\scitea{} \\
+\scitef{public}
+\scitek{:}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitel{TYPE\_TYPE}
+\scitea{ }
+\scitel{typeID}
+\scitek{;}
+\scitea{} \\
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitec{//types used by this one} \\
+\scitea{{\hspace*{1em}} }
+\scitel{std}
+\scitek{::}
+\scitel{deque}
+\scitek{$<$}
+\scitel{TypePtr}
+\scitek{$>$}
+\scitea{ }
+\scitel{typeList}
+\scitek{;}
+\scitea{} \\
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitec{//type modifiers} \\
+\scitea{{\hspace*{1em}} }
+\scitef{bool}
+\scitea{ }
+\scitel{isConst}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{bool}
+\scitea{ }
+\scitel{isReference}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{bool}
+\scitea{ }
+\scitel{isPointer}
+\scitek{;}
+\scitea{} \\
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitef{int}
+\scitea{ }
+\scitel{arraySize}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitel{std}
+\scitek{::}
+\scitel{string}
+\scitea{ }
+\scitel{name}
+\scitek{;}
+\scitea{} \\
+\scitea{{\hspace*{1em}} }
+\scitel{SymPtr}
+\scitea{ }
+\scitel{symbol}
+\scitek{;}
+\scitea{} \\
+\scitek{\};}
+} %end tiny
+
+\end{document}
